@@ -68,7 +68,7 @@ const Quizz= () => {
    
 
     return (
-        <box style={{
+        <Box style={{
             display:"flex",
             flexDirection:"column",
             justifyContent: "center",
@@ -78,7 +78,7 @@ const Quizz= () => {
         }}
         >
             {showScore ? (
-                 <card style={{
+                 <Card style={{
                     display:"flex",
                     textAlign:"center",
                     maxWidth:"400",
@@ -91,7 +91,7 @@ const Quizz= () => {
                         Votre score est de {score} sur {questions.length} !
                         </Typography>
                     </CardContent>
-            </card>
+            </Card>
             ):
             (
               <card style={{ maxWidth:"400",display:"flex"}}>
@@ -136,9 +136,9 @@ const Quizz= () => {
             }
            
 
-        </box>
+        </Box>
     )
 
 
 }
-export default Quiz;
+export default Quizz;
