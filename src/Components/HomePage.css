@@ -1,0 +1,28 @@
+.HomePageContainer {
+    background-color: #1B5377;
+    opacity: 80%;
+    backdrop-filter: blur(100px);
+    width: 80%;
+    height: 80%;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    /*font-size: 18px;*/
+    /*text-align: center;*/
+    color: white;
+}
+
+.title {
+    font-family: 'Libre Bodoni', serif;
+    font-weight: bold;
+    text-align: left;
+    font-size: 24px;
+    margin: 20px 6%;
+}
+
+.text {
+    font-family: 'Libre Bodoni', serif;
+    text-align: left;
+    font-size: 12px;
+    margin: 20px 6%;
+}
