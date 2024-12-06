@@ -1,3 +1,4 @@
+
 .title {
     font-family: 'Libre Bodoni', serif;
     font-weight: bold;
@@ -7,6 +8,19 @@
     max-width: 50%;
 }
 
+.homePageContainer {
+    overflow: hidden; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+
+.textContainer {
+    flex: 1; 
+}
+
+
 .text {
     font-family: 'Libre Bodoni', serif;
     text-align: left;
@@ -14,3 +28,20 @@
     margin: 3rem 2rem;
     max-width: 50%;
 }
+
+
+.imageContainer {
+    position: fixed; 
+    right: -120px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    z-index: 1000; 
+}
+
+.whaleImage {
+    width: 100%; 
+    max-width: 400 px;;
+    transform: rotateY(15deg) rotateX(5deg) translateY(20px); 
+    transition: transform 0.5s ease-in-out; 
+}
+
