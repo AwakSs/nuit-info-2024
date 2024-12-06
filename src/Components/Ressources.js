@@ -19,7 +19,7 @@ const Ressources = () => {
 
         <div className="resources">
           <div className="resource-item">
-            <span role="img" aria-label="earth">🌍</span>
+            <span role="img" aria-label="earth" className="emoji">🌍</span>
             <div>
               <a href="https://www.nationalgeographic.com/environment/oceans/" target="_blank" rel="noopener noreferrer">
                 National Geographic - Océans
@@ -28,7 +28,7 @@ const Ressources = () => {
           </div>
 
           <div className="resource-item">
-            <span role="img" aria-label="brain">🧠</span>
+            <span role="img" aria-label="brain" className="emoji">🧠</span>
             <div>
               <a href="https://www.britannica.com/science/human-body" target="_blank" rel="noopener noreferrer">
                 Encyclopædia Britannica - Le corps humain
@@ -37,7 +37,7 @@ const Ressources = () => {
           </div>
 
           <div className="resource-item">
-            <span role="img" aria-label="ocean">🌊</span>
+            <span role="img" aria-label="ocean" className="emoji">🌊</span>
             <div>
               <a href="https://www.bbc.com/earth/story/20160412-the-incredible-ways-the-ocean-and-your-body-are-connected" 
                  target="_blank" 
@@ -48,7 +48,7 @@ const Ressources = () => {
           </div>
 
           <div className="resource-item">
-            <span role="img" aria-label="book">📖</span>
+            <span role="img" aria-label="book" className="emoji">📖</span>
             <div>
               <a href="https://www.amazon.fr/Lhomme-mer-Yves-Paccalet/dp/2226125684" 
                  target="_blank" 
@@ -59,7 +59,7 @@ const Ressources = () => {
           </div>
 
           <div className="resource-item">
-            <span role="img" aria-label="video">🎥</span>
+            <span role="img" aria-label="video" className="emoji">🎥</span>
             <div>
               <a href="https://www.youtube.com/watch?v=nNtVBcKuqxo" target="_blank" rel="noopener noreferrer">
                 Documentaire : "L'océan, notre source de vie" (YouTube)
@@ -135,9 +135,31 @@ const Ressources = () => {
           border-radius: 8px;
         }
 
-        .resource-item span {
+        /* Animation pour les Emojis */
+        .emoji {
           font-size: 2rem;
           margin-right: 15px;
+          animation: float 3s infinite ease-in-out, rotate 4s infinite ease-in-out;
+        }
+
+        /* Mouvement de rebond vertical */
+        @keyframes float {
+          90%, 100% {
+            transform: translateY(0);
+          }
+          80% {
+            transform: translateY(-10px);
+          }
+        }
+
+        /* Légère rotation oscillante */
+        @keyframes rotate {
+          90%, 100% {
+            transform: rotate(0deg);
+          }
+          90% {
+            transform: rotate(10deg);
+          }
         }
 
         .resource-item a {
