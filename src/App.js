@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Quizz from './Components/Quizz';
+import Ressources from './Components/Ressources';
 
 
 
@@ -16,7 +17,7 @@ function App() {
       </header>
 
       <body>
-        <Quizz/>
+        <Ressources/>
       </body>
 
     </div>
