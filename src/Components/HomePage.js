@@ -6,7 +6,6 @@ import ExploreButton from "./ExploreButton";
 const HomePage = () => {
     return (
         <div className="HomePageContainer">
-            <NavBar/>
             <p className="title">
                 L’Océan et le corps humain
             </p>

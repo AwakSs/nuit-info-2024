@@ -3,19 +3,8 @@ import React from 'react';
 const Ressources = () => {
   return (
     <div className="resources-container">
-      <header className="header">
-        <h1 className="logo">Omer Dallor</h1>
-        <nav>
-          <ul className="nav-links">
-            <li><a href="#accueil">Accueil</a></li>
-            <li><a href="#ressources">Ressources</a></li>
-            <li><a href="#quiz">Quiz</a></li>
-          </ul>
-        </nav>
-      </header>
-
       <main>
-        <h2>Découvrez une sélection de ressources sur les parallèles entre le corps humain et l'océan.</h2>
+        <h3>Découvrez une sélection de ressources sur les parallèles entre le corps humain et l'océan.</h3>
 
         <div className="resources">
           <div className="resource-item">
@@ -70,53 +59,16 @@ const Ressources = () => {
       </main>
 
       <style jsx>{`
-        /* Header Styles */
-        .header {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 1rem 2rem;
-          background-color: #007bff;
-          color: white;
-        }
-
-        .logo {
-          font-size: 1.8rem;
-          font-weight: bold;
-        }
-
-        nav {
-          flex-shrink: 0;
-        }
-
-        .nav-links {
-          display: flex;
-          gap: 1.5rem;
-          list-style: none;
-          margin: 0;
-          padding: 0;
-        }
-
-        .nav-links li a {
-          text-decoration: none;
-          color: white;
-          font-size: 1rem;
-          font-weight: 500;
-          transition: color 0.3s ease;
-        }
-
-        .nav-links li a:hover {
-          color: #ffeb3b;
-        }
 
         /* Resources Section */
         main {
           padding: 20px;
         }
 
-        main h2 {
-          text-align: center;
+        main h3 {
+          text-align: left;
           margin-bottom: 30px;
+          font-family: 'Advent Pro', serif;
         }
 
         .resources {
@@ -141,9 +93,10 @@ const Ressources = () => {
         }
 
         .resource-item a {
-          font-size: 1rem;
+          font-size: 1.2rem;
           color: #000;
           text-decoration: none;
+          font-family: 'Advent Pro', serif;
         }
 
         .resource-item a:hover {

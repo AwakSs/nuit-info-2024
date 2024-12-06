@@ -1,18 +1,29 @@
 import React from 'react';
 import './NavBar.css';
 
-const NavBar = () => {
+const NavBar = ({ setCurrentView, currentView }) => {
+
+    const getButtonClass = (view) => {
+        return currentView === view ? 'active' : '';
+    };
+
     return (
-        <div className="navBar">
-            <div className="leftContainer">
-                <a>Omer Dallor</a>
-            </div>
-            <div className="rightContainer">
-                <a>Accueil</a>
-                <a>Ressources</a>
-                <a>Quizz</a>
-            </div>
-        </div>
+        <header className="header">
+            <h1 className="logo">Omer Dallor</h1>
+            <nav>
+                <ul className="nav-links">
+                    <li>
+                        <a className={getButtonClass('accueil')} onClick={() => setCurrentView('accueil')}>Accueil</a>
+                    </li>
+                    <li>
+                        <a className={getButtonClass('ressources')} onClick={() => setCurrentView('ressources')}>Ressources</a>
+                    </li>
+                    <li>
+                        <a className={getButtonClass('quizz')} onClick={() => setCurrentView('quizz')}>Quizz</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
     );
 }
 

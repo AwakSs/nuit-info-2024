@@ -37,3 +37,15 @@
     transform: rotate(360deg);
   }
 }
+
+.blurry-box {
+    background-color: #1B5377;
+    opacity: 80%;
+    backdrop-filter: blur(100px);
+    width: 80%;
+    height: 80%;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+}
