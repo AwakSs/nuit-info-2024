@@ -1,20 +1,15 @@
 import React from 'react';
 import './HomePage.css';
-import NavBar from "./NavBar";
 import ExploreButton from "./ExploreButton";
 
 const HomePage = () => {
     return (
-        <div className="HomePageContainer">
+        <div className="homePageContainer">
             <p className="title">
                 L’Océan et le corps humain
             </p>
             <p className="text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Donec at leo tincidunt, pretium lorem ut, vulputate urna.
-                Aenean hendrerit fringilla nibh eu euismod.
-                Pellentesque porta urna ac purus faucibus posuere.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. `
+                L'océan, vaste et mystérieux, est bien plus qu'une étendue d'eau qui sépare les continents. Il joue un rôle fondamental dans le maintien de la vie sur Terre, régulant notre climat, fournissant des ressources essentielles et soutenant une biodiversité incroyable.
             </p>
             <ExploreButton/>
         </div>

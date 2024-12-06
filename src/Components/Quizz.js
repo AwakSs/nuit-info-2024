@@ -51,21 +51,19 @@ const Quizz= () => {
     const handleAnswerClick = (option) => {
         if(option === questions[currentQuestion].answer)
         {
-            setScore(score+1);
+            setScore((prevScore) => prevScore + 1);
         }
-        else{
-            setScore(score);
+
+        const nextQuestion = currentQuestion + 1;
+
+        if(nextQuestion < questions.length)
+        {
+            setCurrentQuestion(nextQuestion);
+        }else{
+            setShowScore(true);
         }
     }
 
-    const nextQuestion = currentQuestion + 1;
-    if(nextQuestion < questions.length)
-    {
-        setCurrentQuestion(nextQuestion);
-    }else{
-        setShowScore(true);
-    }
-   
 
     return (
         <Box style={{
@@ -107,7 +105,7 @@ const Quizz= () => {
                         {questions[currentQuestion].question}
 
                         </Typography>
-                        
+
                         {questions[currentQuestion].options.map((option, index) => (
 
                                     <Button
@@ -130,11 +128,11 @@ const Quizz= () => {
 
                                     ))}
                 </CardContent>
-              </card>    
+              </card>
             )
 
             }
-           
+
 
         </Box>
     )
